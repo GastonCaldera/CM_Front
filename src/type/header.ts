@@ -1,9 +1,10 @@
-import { SectionType, SortType } from "./getRequestGalleryType";
 export type HeaderProps = {
-  selectedOptionSection?: SectionType;
-  setSelectedOptionSection?: (value: SectionType) => void;
-  selectedOptionSort?: SortType;
-  setSelectedOptionSort?: (value: SortType) => void;
-  showSelect: boolean;
-  showGoBack: boolean;
+  selectedOptionCamera: string;
+  setSelectedOptionCamera: (value: string) => void;
+  selectedOptionType: string;
+  setSelectedOptionType: (value: string) => void;
+  sol: string;
+  setSol: (value: string) => void;
+  date: string;
+  setDate: (value: string) => void;
 };

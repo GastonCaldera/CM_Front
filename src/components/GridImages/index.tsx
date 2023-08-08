@@ -10,11 +10,11 @@ export default function GridImages({ data }: GridImagesProps) {
   }, []);
   return (
     <div
-      className="my-8 grid gap-4 grid-cols-1 sm:grid md:grid-cols-3 lg:grid-cols-5 mb-8 container mx-auto"
+      className="my-8 sm:columns-1 md:columns-3 lg:columns-4 mb-8 container mx-auto px-4"
       data-aos="fade-up"
-      data-aos-delay="1200">
+      data-aos-delay="200">
       {data?.map((item: DataImageType, index: number) => {
-        return <GridBox key={index} data={item} index={index} />;
+        return <GridBox key={index} data={item} />;
       })}
     </div>
   );

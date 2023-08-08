@@ -7,6 +7,11 @@ const nextConfig = {
                 hostname: 'mars.jpl.nasa.gov',
                 port: '',
             },
+            {
+                protocol: 'http',
+                hostname: 'mars.nasa.gov',
+                port: '',
+            },
         ],
     },
 }

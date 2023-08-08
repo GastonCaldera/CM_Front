@@ -1,13 +1,13 @@
 import { ChangeEvent } from "react";
-import { SectionType, SortType } from "./getRequestGalleryType";
 
 export type Option = {
-  value: SortType | SectionType;
+  value: string;
   label: string;
 };
 
 export type SelectProps = {
   options: Option[];
   value: string;
+  width: number;
   onChange: (event: ChangeEvent<HTMLSelectElement>) => void;
 };
